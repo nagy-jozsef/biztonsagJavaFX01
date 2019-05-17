@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@biztonsag.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Lnko">
+   <children>
+      <Button fx:id="btnVissza" layoutX="441.0" layoutY="530.0" mnemonicParsing="false" onAction="#fomenu" prefHeight="49.0" prefWidth="329.0" text="Vissza a főmenühöz...">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Button fx:id="btnLnko" layoutX="95.0" layoutY="217.0" mnemonicParsing="false" onAction="#lnko" prefHeight="49.0" prefWidth="275.0" text="LNKO kiszámítása">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtSzam1" layoutX="95.0" layoutY="89.0" prefHeight="25.0" prefWidth="165.0" />
+      <TextField fx:id="txtSzam2" layoutX="95.0" layoutY="154.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="18.0" layoutY="96.0" text="Szám1" />
+      <Label layoutX="22.0" layoutY="161.0" text="Szám2" />
+      <Label layoutX="22.0" layoutY="291.0" text="LNKO" />
+      <TextField fx:id="txtLnko" alignment="CENTER" editable="false" layoutX="95.0" layoutY="287.0" onAction="#lnko" prefHeight="40.0" prefWidth="165.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="29.0" prefHeight="21.0" prefWidth="329.0" text="Legnagyobb közös osztó kiszámítása" textAlignment="CENTER" textFill="#1807ab" underline="true">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCalc" layoutX="542.0" layoutY="40.0" mnemonicParsing="false" onAction="#calculator" prefHeight="49.0" prefWidth="220.0" text="Számológép">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLnkoMent" layoutX="95.0" layoutY="344.0" mnemonicParsing="false" onAction="#lnko_save" prefHeight="49.0" prefWidth="275.0" text="Adatok mentése">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPelda" layoutX="385.0" layoutY="217.0" mnemonicParsing="false" onAction="#pelda" prefHeight="49.0" prefWidth="329.0" text="Példa: (1785,546) = 21">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

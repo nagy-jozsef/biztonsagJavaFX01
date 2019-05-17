@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@biztonsag.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrimTeszt">
+   <children>
+      <Button fx:id="btnVissza" layoutX="422.0" layoutY="530.0" mnemonicParsing="false" onAction="#fomenu" prefHeight="49.0" prefWidth="348.0" text="Vissza a főmenühöz...">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Button fx:id="btnTeszt" layoutX="21.0" layoutY="316.0" mnemonicParsing="false" onAction="#miller" prefHeight="49.0" prefWidth="329.0" text="TESZT FUTTATÁSA">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtSzam" layoutX="123.0" layoutY="114.0" prefHeight="25.0" prefWidth="165.0" promptText="Szám:" />
+      <TextField fx:id="txtA1" layoutX="123.0" layoutY="162.0" prefHeight="25.0" prefWidth="165.0" promptText="a:" />
+      <Label layoutX="22.0" layoutY="121.0" text="Szám" />
+      <Label layoutX="22.0" layoutY="169.0" text="Bázis (a) 1" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="29.0" prefHeight="21.0" prefWidth="329.0" text="Miller-Rabin teszt" textAlignment="CENTER" textFill="#1807ab" underline="true">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCalc" layoutX="517.0" layoutY="40.0" mnemonicParsing="false" onAction="#calculator" prefHeight="49.0" prefWidth="245.0" text="Számológép">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtE1" layoutX="435.0" layoutY="162.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="336.0" layoutY="169.0" text="Összetett?" />
+      <TextField fx:id="txtA2" layoutX="123.0" layoutY="210.0" prefHeight="25.0" prefWidth="165.0" promptText="a:" />
+      <Label layoutX="22.0" layoutY="217.0" text="Bázis (a) 2" />
+      <TextField fx:id="txtE2" layoutX="435.0" layoutY="210.0" prefHeight="25.0" prefWidth="165.0" />
+      <Label layoutX="325.0" layoutY="217.0" text="Összetett?" />
+      <TextField fx:id="txtEredmeny" layoutX="223.0" layoutY="257.0" prefHeight="38.0" prefWidth="202.0" />
+      <Label layoutX="95.0" layoutY="264.0" text="Eredmény:" />
+      <Label layoutX="95.0" layoutY="76.0" text="Példa: 241, 11, 15" />
+      <Button fx:id="btnMent" layoutX="21.0" layoutY="408.0" mnemonicParsing="false" onAction="#mentes" prefHeight="49.0" prefWidth="329.0" text="ADATOK MENTÉSE">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPelda" layoutX="368.0" layoutY="316.0" mnemonicParsing="false" onAction="#pelda" prefHeight="49.0" prefWidth="329.0" text="Példa: (241,11,15)">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

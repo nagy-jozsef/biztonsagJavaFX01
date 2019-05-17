@@ -1,0 +1,120 @@
+/*
+    Document   :
+*/
+
+.root {
+    -fx-font-size: 14px;
+    -fx-font-size: 14pt;
+    -fx-font-family: sans-serif;
+    -fx-font-family: "Tahoma";
+    -fx-base: #DFB951;
+    /* -fx-background-color: #ffffff; */
+    -fx-background: #A78732;
+    -fx-focus-color: #B6A678;
+
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-border-insets: 5px;
+    -fx-padding: 10px;
+    -fx-spacing: 5px;
+    /* -fx-background-color: lightgray; */
+    -fx-background-insets: 5px;
+
+    -fx-background-image: url("hatter.png");
+}
+
+.button {
+    -fx-font: bold italic 20pt "Arial";
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 2 , 0 );
+}
+
+#btnBezar {
+    -fx-background-image: url("exit.png");
+    -fx-background-position: left, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 48, 48;
+}
+
+#btnCalc {
+    -fx-background-image: url("calculator.png");
+    -fx-background-position: left, center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 44, 44;
+}
+
+.buttonx {
+    -fx-text-fill: #006464;
+    -fx-background-color: #DFB951;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+}
+
+.slider{
+    -fx-border-color: white;
+    -fx-border-style: dashed;
+    -fx-border-width: 2;
+}
+
+
+
+.header-section {
+    -fx-padding: 10px;
+    -fx-font-size: 20px;
+    -fx-background-color: teal;
+}
+
+.header-section Label {
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+}
+
+#account {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+.sidebar-section {
+    -fx-min-width: 200px;
+    -fx-pref-width: 200px;
+    -fx-max-width: 200px;
+    -fx-border-width: 1;
+    -fx-border-color: transparent #E8E8E8 transparent transparent;
+}
+
+.sidebar-section Label {
+    -fx-font-size: 18px;
+    -fx-padding: 10 15 10 15;
+    -fx-border-width: 1;
+    -fx-border-color: transparent transparent #E8E8E8 transparent;
+    -fx-min-width: 200px;
+    -fx-pref-width: 200px;
+    -fx-max-width: 200px;
+}
+
+.content-section {
+    -fx-padding: 10 20 10 20;
+    -fx-wrap-text: true;
+
+}
+
+#content-header {
+    -fx-font-size: 18px;
+    -fx-padding: 0 0 10 0;
+    -fx-font-weight: 700;
+}
+
+#content {
+    -fx-wrap-text: true;
+    -fx-font-size: 16px;
+}
+
+#footer-section {
+    -fx-alignment: center;
+    -fx-padding: 10 10 10 10;
+    -fx-border-width: 1;
+    -fx-border-color: #E8E8E8 transparent transparent transparent;
+}
